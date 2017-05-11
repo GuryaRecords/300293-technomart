@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Техномарт-главная</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -19,9 +22,9 @@
             </form>
           </div>
           <div class="user-section">
-            <a href="#" class="bookmarks">Закладки:0</a>
-            <a href="#" class="cart">Корзина:0</a>
-            <a href="#" class="checkout">Оформить заказ</a>
+            <a href="#" class="bookmarks">закладки:0</a>
+            <a href="#" class="cart">корзина:0</a>
+            <a href="#" class="checkout">оформить заказ</a>
           </div>
         </div>
       </div>
@@ -44,22 +47,22 @@
                 <a href="#">Главная</a>
               </li>
               <li class="main-navigation-item">
-                <a href="#">Компания</a>
+                <a href="#">компания</a>
               </li>
               <li class="main-navigation-item">
-                <a href="#">Каталог</a>
+                <a href="catalog.html">каталог</a>
               </li>
               <li class="main-navigation-item">
-                <a href="#">Новости</a>
+                <a href="#">новости</a>
               </li>
               <li class="main-navigation-item">
-                <a href="#">Спецпредложения</a>
+                <a href="#">спецпредложения</a>
               </li>
               <li class="main-navigation-item">
-                <a href="#">Доставка</a>
+                <a href="#">доставка</a>
               </li>
               <li class="main-navigation-item">
-                <a href="#">Контакты</a>
+                <a href="#">контакты</a>
               </li>
             </ul>
           </nav>
@@ -69,18 +72,17 @@
       <div class="container">
         <div class="promo-block clearfix">
             <div class="promo-item material">
-              <span>Материалы</span>
+              <span>материалы</span>
               <a href="#">на любой вкус</a>
             </div>
             <div class="promo-item tools">
-              <span>Инструмент</span>
+              <span>инструмент</span>
               <a href="#">на все случаи</a>
             </div>
             <div class="promo-item technology">
-              <span>Техника</span>
+              <span>техника</span>
               <a href="#">для стройки</a>
             </div>
-
             <section class="promo-slider">
               <div class="slider-item">
                 <h2>перфораторы</h2>
@@ -88,18 +90,27 @@
                 <button type="button" class="slider-prew"></button>
                 <button type="button" class="slider-next"></button>
                 <a href="#" class="btn">открыть каталог</a>
+                <input type="checkbox" name="" value="checked">
+                <input type="checkbox" name="" value="">
+              </div>
+              <div class="slider-item slider-hidden">
+                <h2>дрели</h2>
+                <p>соседям на радость!</p>
+                <button type="button" class="slider-prew"></button>
+                <button type="button" class="slider-next"></button>
+                <a href="#" class="btn">открыть каталог</a>
+                <input type="checkbox" name="" value="">
+                <input type="checkbox" name="" value="checked">
               </div>
             </section>
-
               <div class="promo-item sales">
-                <span>Скидки 50%</span>
+                <span>скидки 50%</span>
                 <a href="#">на 350 товаров</a>
               </div>
               <div class="promo-item deliver">
-                <span>Доставка</span>
+                <span>доставка</span>
                 <a href="#">бесплатно</a>
               </div>
-
         </div>
         <div class="products">
           <header class="content-header">
@@ -113,9 +124,9 @@
                 <a href="#" class="buy">купить</a>
                 <a href="#" class="to-bookmarks">в закладки</a>
               </div>
-              <h2>Перфоратор BOSH BFG 9000</h2>
-              <span class="old">32500 Р.</span>
-              <span class="actual">25500 Р.</span>
+              <h2>перфоратор BOSH BFG 9000</h2>
+              <div class="discount">32500 Р.</div>
+              <div class="price">25500 Р.</div>
             </article>
             <article class="product-item">
               <img src="img/bosch-bfg3000.jpg" alt="Перфоратор BOSH BFG 3000" width="218" height="160">
@@ -123,9 +134,9 @@
                 <a href="#" class="buy">купить</a>
                 <a href="#" class="to-bookmarks">в закладки</a>
               </div>
-              <h2>Перфоратор BOSH BFG 3000</h2>
-              <span class="old">22500 Р.</span>
-              <span class="actual">15500 Р.</span>
+              <h2>перфоратор BOSH BFG 3000</h2>
+              <div class="discount">22500 Р.</div>
+              <div class="price">15500 Р.</div>
             </article>
             <article class="product-item">
               <img src="img/bosch-bfg6000.jpg" alt="Перфоратор BOSH BFG 6000" width="218" height="160">
@@ -133,18 +144,21 @@
                 <a href="#" class="buy">купить</a>
                 <a href="#" class="to-bookmarks">в закладки</a>
               </div>
-              <h2>Перфоратор BOSH BFG 6000</h2>
-                <span class="old">30500 Р.</span>
-                <span class="actual">25500 Р.</span>
+              <h2>перфоратор BOSH BFG 6000</h2>
+                <div class="discount">30500 Р.</div>
+                <div class="price">25500 Р.</div>
             </article>
             <article class="product-item">
+              <div class="flag flag-new">
+                новинка
+              </div>
               <img src="img/bosch-bfg2000.jpg" alt="Перфоратор BOSH BFG 2000" width="218" height="160">
               <div class="hidden">
                 <a href="#" class="buy">купить</a>
                 <a href="#" class="to-bookmarks">в закладки</a>
               </div>
-              <h2>Перфоратор BOSH BFG 2000</h2>
-              <span class="actual">12500 Р.</span>
+              <h2>перфоратор BOSH BFG 2000</h2>
+              <div class="price">12500 Р.</div>
             </article>
           </div>
         </div>
@@ -186,8 +200,8 @@
           <section class="slogan">
             <h2>сервисы</h2>
             <p>
-              Хороший интернет-магазин отличается от плохого не только ценами!
-              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+              хороший интернет-магазин отличается от плохого не только ценами!
+              мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
           </section>
           <div class="services-slider">
@@ -293,8 +307,8 @@
        </div>
     </main>
     <footer class="page-footer">
-      <div class="container">
-        <div class="top-row">
+      <div class="top-row">
+          <div class="container">
             <div class="top-row-block">
               <div class="logo">
                 <a href="#">техномарт</a>
@@ -337,8 +351,10 @@
                 </li>
               </ul>
             </nav>
-        </div>
-        <div class="bottom-row">
+          </div>
+      </div>
+      <div class="bottom-row">
+        <div class="container">
           <div class="footer-copyright">
             <p>
               &#169; 2010-2017 Компания&#171;Техномарт&#187;<br>
